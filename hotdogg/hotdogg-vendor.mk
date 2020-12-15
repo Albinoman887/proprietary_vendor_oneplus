@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 AOSiP
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -169,8 +169,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/ipa_uc.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.b01 \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
-    vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_Ardour.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Ardour.bin \
-    vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_Chic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Chic.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_allusion.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_allusion.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_amiable.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_amiable.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_blare.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_blare.bin \
@@ -194,7 +192,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_spirit.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_spirit.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_surprise.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_surprise.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/notif_twinkle.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_twinkle.bin \
-    vendor/oneplus/hotdogg/proprietary/vendor/firmware/ring_McLarn.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_McLarn.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/ring_T-Jingle.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_T-Jingle.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/ring_alacrity.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_alacrity.bin \
     vendor/oneplus/hotdogg/proprietary/vendor/firmware/ring_amenity.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_amenity.bin \
@@ -267,7 +264,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/hotdogg/proprietary/vendor/lib/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVencMpeg4.so \
     vendor/oneplus/hotdogg/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
     vendor/oneplus/hotdogg/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
-    vendor/oneplus/hotdogg/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
     vendor/oneplus/hotdogg/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/oneplus/hotdogg/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/oneplus/hotdogg/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -455,4 +451,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/hotdogg/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/oneplus/hotdogg/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
     vendor/oneplus/hotdogg/proprietary/vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so \
-    vendor/oneplus/hotdogg/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
+    vendor/oneplus/hotdogg/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
+    vendor/oneplus/hotdogg/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+
+PRODUCT_PACKAGES += \
+    QFingerprintService
